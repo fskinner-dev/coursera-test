@@ -4,20 +4,24 @@
   box-sizing: border-box;
 }
 h1 {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   text-align: center;
 }
 p {
     border: 1px solid black;
     background-color: gray;
     width: 90%;
-    height: 150px;
     margin-right: auto;
     margin-left: auto;
+ 
+
     margin-top: auto;
     font-family: Helvetica;
     color: black;
-    padding-top: 25px;
+    padding-top: 35px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2px;
 }
 
 /* Simple Responsive Framework. */
@@ -25,24 +29,40 @@ p {
   width: 100%;
 }
 
-/********** Large Devices only **********/
+/********** Large Devices **********/
 @media (min-width: 992px) {
-  .col-lg-3 {
+  .col-lg-4 {
     float:left;
+    /* border: 1px solid green; */
   }
-  .col-lg-3 {
+  .col-lg-4 {
     width: 33.33%;
   }
 }
-/********** Medium Devices only **********/
+/********** Medium Devices **********/
 @media (min-width: 768px) and (max-width: 991.9px) {
-  .col-md-6 {
+  .col-md-6, .col-md-12 {
     float:left;
+    /* border: 1px solid green; */
   }
   .col-md-6 {
     width: 50%;
   }
+  .col-md-12 {
+    width: 100%;
+  }
 }
+/********** Small Devices **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float:left;
+    /* border: 1px solid green; */
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
 section {
   border: 1px solid black;
   float:right;
@@ -50,8 +70,10 @@ section {
   top: 0%;
   right: 5%;
   text-align: center;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 #s1 {
