@@ -1,0 +1,124 @@
+body {
+    font-size: 18px;
+    font-family: 'Balsamiq Sans';
+    color: black;
+    font-weight: bolder;
+}
+
+#header-nav {
+    border-radius: 0;
+    border: solid 3px black;
+    background-color: gray;
+    margin-bottom: 0;
+}
+
+
+/* brand and hamburger button section */
+div.navbar-header {
+    background-color: gray;
+}
+
+/* hamburger button container */
+.navbar-default .navbar-toggle {
+    border-color: black;
+    border: solid 3px;
+    margin-right: 25px;
+}
+
+/* hamburger button bars */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+    width: 32px;
+    height: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#our-brand {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#our-brand, #our-menu {
+    font-size:1.5em;
+    font-weight: 900;
+    color: black;
+}
+
+#our-menu-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    border-right: solid black 3px;
+    border-left: solid black 3px;
+    border-bottom: solid black 3px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+ul#nav-list.navbar-nav.visible-xs {
+    border: solid 1px black;
+    background-color: white;
+}
+
+li {
+    /* text-align: center; */
+    border-top: solid 1px black;
+    font-weight: bold;
+}
+
+#tall-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tall-section {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: gray;
+    margin-top: 15px;
+    margin-bottom: 40px;   
+}
+
+
+
+/********* Medium and Smalls *********/
+@media (min-width: 769px) {
+    
+    #navbar-header-container {
+        margin-left: -15px;
+    }
+
+
+    #our-menu {
+        padding-top: 10px;
+    }
+
+    #our-menu-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+/******** Mobile only (xs) ********/
+@media (max-width: 768px) {
+    #tall-section {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #our-menu {
+        padding-top: 20px;
+    }
+    
+}
+
